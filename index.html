@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>World Internet Use</title>
+  <link rel="stylesheet" href="static/css/anime.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/styles.css">
+
+  <script src='https://cdn.plot.ly/plotly-2.11.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+</head>
+
+<body>
+
+  <div class="mainbody">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center header">
+        <h1 class="ml2">World Internet Use</h1> 
+        <p>Use this interactive dashboard to explore the Internet Use, Income Group & GDP Growth Datasets from Worldbank</p>
+      </div>  
+        <div class="row1"></div>
+        </div> 
+        <div  class="col-md-4 animation"></div>
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_ml2tukhp.json" background="transparent"  speed="1"  style="width: 300px; height: 300x;"loop autoplay ></lottie-player> 
+      </div>
+    </div>
+    <div class="row row2">
+      <div  class="col-md-2 dropdown">
+        <div  class="well">
+          <h5 >Select Year</h5>
+          <select  id="select-year" onchange="optionChanged(this.value)"></select>
+        </div> 
+      </div>
+      <div class="col-md-9">
+        <hr class="line">
+      </div>
+    </div>
+
+    <div class="row row3"></div>
+      <div class="col-md-5 map">
+      <div id="myDiv"></div>
+    </div>
+    </div>
+      <div class="col-md-5 gdp">
+        <div id="GDP"></div>
+      </div>
+    </div>
+    
+    <div class="row row4">
+      <div class="col-md-12 bar">
+        <div id='barchart'></div>
+        <ul class="charts-css legend legend-line">
+          <li> High Income&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li> Upper Middle Income&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</li>
+          <li> Lower Middle Income &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li> Lower Income &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row row5">
+      <p>Project 2 by Andriani Christanty, Ashlyn Hogan and Virginia Mwape - UWA Data Analytics Bootcamp 2022</p>
+      <div class="col-md-12 footer">
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="static/js/app.js"></script>
+  <script src="static/js/anime.js"></script>
+  <!-- <script src="static/js/animation.json"></script> -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  
+</body>
+
+</html>
+
+
+

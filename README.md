@@ -1,1 +1,2 @@
-# World_Internet_Project
+# world_internet_access
+Group Project 2
